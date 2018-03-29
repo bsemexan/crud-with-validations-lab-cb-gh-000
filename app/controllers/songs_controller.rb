@@ -25,4 +25,10 @@ class SongsController < ApplicationController
   def destroy
   end
 
+  private
+
+  def song_params
+    params.permit(:name, :email, :phone_number)
+  end
+
 end
