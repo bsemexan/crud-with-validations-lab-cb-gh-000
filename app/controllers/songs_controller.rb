@@ -3,6 +3,9 @@ class SongsController < ApplicationController
     @song = Song.new
   end
 
+  def edit
+  end
+
   def create
   end
 
@@ -10,4 +13,5 @@ class SongsController < ApplicationController
   end
   def destroy
   end
+
 end
