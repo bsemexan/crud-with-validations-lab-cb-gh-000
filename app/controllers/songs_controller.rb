@@ -8,10 +8,6 @@ class SongsController < ApplicationController
     @song = Song.new
   end
 
-  def edit
-    @song = Song.find(params[:id])
-  end
-
   def show
     @song = Song.find(params[:id])
   end
@@ -23,6 +19,10 @@ class SongsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def edit
+    @song = Song.find(params[:id])
   end
 
   def update
