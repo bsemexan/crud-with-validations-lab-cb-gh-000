@@ -4,8 +4,10 @@ class SongsController < ApplicationController
   end
 
   def create
-  end 
+  end
 
   def update
+  end
+  def destroy
   end
 end
