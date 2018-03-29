@@ -11,7 +11,7 @@ class SongsController < ApplicationController
   end
 
   def create
-    @song = Song.create(author_params)
+    @song = Song.create(song_params)
     if @song.save
       redirect_to song_path(@song)
     else
