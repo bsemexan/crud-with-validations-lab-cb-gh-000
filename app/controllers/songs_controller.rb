@@ -3,7 +3,7 @@ class SongsController < ApplicationController
   def index
     @songs = Song.all
   end
-  
+
   def new
     @song = Song.new
   end
@@ -36,6 +36,8 @@ class SongsController < ApplicationController
   end
 
   def destroy
+    @song.destroy
+    redirect_to songs_path
   end
 
   private
